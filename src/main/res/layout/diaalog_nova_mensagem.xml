@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#323232"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iD da Mensagem"
+        android:textStyle="normal"
+        android:textColor="#E2DEDE"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:id="@+id/edId"
+        android:layout_gravity="left"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome de Usuário"
+        android:textStyle="normal"
+        android:textColor="#E2DEDE"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:id="@+id/edNomeUsuario"
+        android:layout_gravity="left"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto da Mensagem"
+        android:textStyle="normal"
+        android:textColor="#E2DEDE"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:id="@+id/edTextoMensagem"
+        android:layout_gravity="left"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data De Envio"
+        android:textStyle="normal"
+        android:textColor="#E2DEDE"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:id="@+id/edDataEnvio"
+        android:layout_gravity="left"
+        />
+</LinearLayout>

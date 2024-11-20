@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#323232"
+    android:padding="30dp"
+
+    >
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="bottom"
+       android:layout_marginBottom="50dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Número Matricula"
+           android:textStyle="normal"
+           android:textColor="#E2DEDE"
+           android:textSize="20dp"
+           />
+       <EditText
+           android:layout_marginBottom="10dp"
+           android:layout_width="312dp"
+           android:layout_height="40dp"
+           android:id="@+id/edNumMatricula"
+           android:layout_gravity="left"
+           />
+
+   </LinearLayout>
+</LinearLayout>

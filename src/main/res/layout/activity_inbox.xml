@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.InboxActivity"
+    android:background="#232323"
+    >
+    <!--    view group cabeçalho-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#323232"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/lnCabecalho"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caixa de Mensagens"
+            android:textColor="#EEEBEB"
+            android:layout_gravity="center"
+            android:layout_marginTop="43dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvProjetos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensagens"
+            android:textColor="#EEEBEB"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para excluir deslize a mensagem para a esquerda ou para a direita"
+        android:textColor="#9c0e07"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:layout_below="@+id/lnCabecalho"
+        android:id="@+id/tvMensagem"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvMensagens"
+        android:layout_below="@+id/tvMensagem"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btNovaMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_plus"
+        android:backgroundTint="#C0C0CF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="20dp"/>
+
+    <!--    menu fixado abaixo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#404040"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btMainProjetos"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="30dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btInbox"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_inbox"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginEnd="30dp"/>
+        <ImageButton
+            android:id="@+id/btPesquisarProjeto"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+</RelativeLayout>
